@@ -21,7 +21,7 @@ gulp.task('browser-sync', function() {
     // change 'playground' to whatever your local Nginx/Apache vhost is set
     // most commonly 'http://localhost/' or 'http://127.0.0.1/'
     // See http://www.browsersync.io/docs/options/ for more information    
-    proxy: 'localhost/~leogg/monchito/',
+    proxy: 'playground',
     notify: false
     });
 });
