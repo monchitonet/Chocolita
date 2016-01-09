@@ -2,9 +2,9 @@ var gulp        = require('gulp');
 var browserSync = require('browser-sync');
 var reload      = browserSync.reload;
 var sass        = require('gulp-sass');
-var minifyCss   = require('gulp-minify-css');
-var jshint      = require( 'gulp-jshint' ),
-var stylish     = require( 'jshint-stylish' ),
+var cssnano     = require('gulp-cssnano');
+var jshint      = require( 'gulp-jshint' );
+var stylish     = require( 'jshint-stylish' );
 
  
 // browser-sync task for starting the server.
@@ -21,7 +21,7 @@ gulp.task('browser-sync', function() {
     // change 'playground' to whatever your local Nginx/Apache vhost is set
     // most commonly 'http://localhost/' or 'http://127.0.0.1/'
     // See http://www.browsersync.io/docs/options/ for more information    
-    proxy: 'playground',
+    proxy: 'localhost/~leogg/monchito/',
     notify: false
     });
 });
@@ -37,8 +37,8 @@ gulp.task('sass', function () {
 });
 
 
-//Minify css with clean-css
-gulp.task('minify-css', function() {
+//Minify css with cssnano
+gulp.task('cssnano', function() {
   return gulp.src('*.css')
     .pipe(minifyCss({compatibility: 'ie8'}))
     .pipe(gulp.dest('dist'));
