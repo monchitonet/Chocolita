@@ -59,5 +59,6 @@ gulp.task( 'jshint', function() {
 // Note the second parameter, those are dependency tasks which need to be done
 // before the main function (third parameter) is called.
 gulp.task( 'default', [ 'sass', 'browser-sync' ], function() {
+  gulp.watch("sass/**/*.scss", ['sass'];
   console.log('done');
 } );
