@@ -286,7 +286,7 @@ html {
   box-sizing: inherit; }
 
 body {
-  background: #e1e1e1;
+  background: #fff;
   /* Fallback for when there is no custom background color defined. */ }
 
 blockquote, q {
