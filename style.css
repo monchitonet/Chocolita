@@ -417,7 +417,7 @@ a {
   a:hover, a:focus, a:active {
     color: midnightblue; }
   a:focus {
-    outline: thin dotted; }
+    outline: 0; }
   a:hover, a:active {
     outline: 0; }
 
