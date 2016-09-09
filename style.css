@@ -378,7 +378,7 @@ input[type="color"],
 textarea {
   color: #666;
   border: 1px solid #ccc;
-  border-radius: 3px;
+  border-radius: 0;
   padding: 3px; }
   input[type="text"]:focus,
   input[type="email"]:focus,
