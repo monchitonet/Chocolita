@@ -6,7 +6,7 @@ var cssnano     = require('gulp-cssnano');
 var jshint      = require( 'gulp-jshint' );
 var stylish     = require( 'jshint-stylish' );
 
- 
+
 // browser-sync task for starting the server.
 gulp.task('browser-sync', function() {
     //watch files
@@ -14,24 +14,26 @@ gulp.task('browser-sync', function() {
     './style.css',
     './*.php'
     ];
- 
+
     //initialize browsersync
     browserSync.init(files, {
     //browsersync with a php server
     // change 'playground' to whatever your local Nginx/Apache vhost is set
     // most commonly 'http://localhost/' or 'http://127.0.0.1/'
-    // See http://www.browsersync.io/docs/options/ for more information    
+    // See http://www.browsersync.io/docs/options/ for more information
     proxy: 'playground',
     notify: false
     });
 });
 
- 
+
 // Sass task, will run when any SCSS files change & BrowserSync
 // will auto-update browsers
 gulp.task('sass', function () {
     return gulp.src('sass/*.scss')
-        .pipe(sass())
+        .pipe(sass({
+             outputStyle: 'expanded'
+         }))
         .pipe(gulp.dest('./'))
         .pipe(reload({stream:true}));
 });
