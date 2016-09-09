@@ -1,5 +1,7 @@
 # Chocolita, un tema base de WordPress con Gulp y Sass
 
+![](https://raw.githubusercontent.com/monchitonet/Chocolita/master/screenshot.png?raw=true | width=350)
+
 Chocolita es un tema base de WordPress basado en [Underscores](http://underscores.me/), con una implementación de [Sass](http://sass-lang.com/) y una configuración básica de [Gulp](http://gulpjs.com/), que ayuda a acelerar y optimizar el proceso de desarrollo de temas personalizados para WordPress desde cero.
 
 ### Requerimientos
@@ -63,7 +65,7 @@ Una vez que esté listo, solo necesitas correr:
 $ gulp
 ```
 
-El comando anterior ejecuta las tareas predefinidas en el archivo `gulpfile.js`. Puedes agregar tus propias tareas en este archivo. También puedes ejecutar tareas individuales, llamándolas por su nombre. Por ejemplo: 
+El comando anterior ejecuta las tareas predefinidas en el archivo `gulpfile.js`. Puedes agregar tus propias tareas en este archivo. También puedes ejecutar tareas individuales, llamándolas por su nombre. Por ejemplo:
 
 ```
 $ gulp sass
