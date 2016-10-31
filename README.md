@@ -92,6 +92,7 @@ Si tienes alguna duda acerca del uso de este tema, puedes [mandarnos un mensaje]
 
 ### Enlaces de interés
 
+- [Presentación Desarrollo en WordPress desde cero - Parte I](https://github.com/wpnicaragua/presentaciones/blob/master/Meetups/Leandro_Gomez_-_Desarrollo_en_WordPress_desde_cero_-_Parte_I.pdf)
 - [Manual de Sass](http://librosweb.es/libro/sass/capitulo_4.html)
 - [Tutorial de Gulp](https://platzi.com/blog/automatizacion-gulp-js/)
 
