@@ -100,6 +100,10 @@ Si tienes alguna duda acerca del uso de este tema, puedes [mandarnos un mensaje]
 
 - [Leandro Gómez](https://twitter.com/leogg)
 
+### Agradecimientos
+
+- [Oscar Arroliga](https://twitter.com/oscararroliga ) y [Earl Downs](https://twitter.com/DownsEarl) por el reporte sobre error de permisos.
+
 ### Licencia
 
 Liberado bajo una licencia GPLv2 o mayor.
