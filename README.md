@@ -48,7 +48,22 @@ $ cd /tu-directorio-de-wordpress/wp-content/themes/
 $ git clone git@github.com:monchitonet/Chocolita.git
 ```
 
-Cambia la línea 24 del archivo `gulpfile.js` con los datos de tu servidor. Ingresa a WordPress y activa el tema.
+Si al clonar el tema te sale el siguiente mensaje de error:
+
+```
+Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+```
+...es que hay problemas de permisos. Consulta la [documentación oficial](https://help.github.com/articles/error-permission-denied-publickey/) correspondiente a tu sistema operativo. Alternativamente, puedes clonar Chocolita por https:
+
+```
+$ git clone https://github.com/monchitonet/Chocolita.git
+```
+
+Por último, cambia la línea 24 del archivo `gulpfile.js` con los datos de tu servidor. Ingresa a WordPress y activa el tema.
 
 ### Corriendo Gulp
 
