@@ -41,13 +41,35 @@ $ bower install jquery
 
 ### Instalando el tema
 
-Hay dos formas de instalar Chocolita; manualmente o utilizando el [instalador para Mac y Linux](https://github.com/kikeonline/chocolita-install) desarrollado por [kikeonline](https://github.com/kikeonline).
+Hay dos formas de instalar Chocolita; manualmente o utilizando el [instalador para Chocolita](https://www.npmjs.com/package/chocolita-npm-installer) desarrollado por [kikeonline](https://github.com/kikeonline).
 
 #### Instalador de Chocolita
 
 ![alt tag](https://raw.githubusercontent.com/kikeonline/chocolita-install/master/screen.png)
 
-Ingresa a tu directorio de temas `/wp-content/themes` y sigue las instrucciones en el [repositorio oficial](https://github.com/kikeonline/chocolita-install).
+Instala `chocolita-npm-installer`
+
+```
+$ npm install -g chocolita-npm-installer
+```
+
+[Instala WordPress](https://codex.wordpress.org/es:Instalando_Wordpress) como lo haces normalmente y asegúrate de que estás en tu carpeta themes de Wordpress /wordpress/wp-content/themes/
+
+```
+$ cd /wordpress/wp-content/themes/
+```
+
+Corre el instalador con la siguiente línea y sigue las instrucciones
+
+```
+$ chocolita
+```
+
+También podes pasar argumentos de la siguiente manera
+
+```
+$ chocolita <themename> [localhost]
+```
 
 #### Instalación manual
 
