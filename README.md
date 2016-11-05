@@ -45,9 +45,9 @@ Hay dos formas de instalar Chocolita; manualmente o utilizando el [instalador pa
 
 #### Instalador de Chocolita
 
-![alt tag](https://raw.githubusercontent.com/kikeonline/chocolita-install/master/screen.png)
+![alt tag](https://raw.githubusercontent.com/kikeonline/chocolita-npm-installer/master/screen.gif)
 
-Instala `chocolita-npm-installer`
+Instala chocolita-npm-installer
 
 ```
 $ npm install -g chocolita-npm-installer
