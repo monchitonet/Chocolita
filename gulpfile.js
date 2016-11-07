@@ -5,7 +5,30 @@ var sass        = require('gulp-sass');
 var cssnano     = require('gulp-cssnano');
 var jshint      = require( 'gulp-jshint' );
 var stylish     = require( 'jshint-stylish' );
+var autoprefixer = require('gulp-autoprefixer');
+var del          = require('del');
+var zip          = require('gulp-zip');
+var runSequence  = require('run-sequence');
 
+//Files to src and ingnore for gulp build
+var build_files = [
+  '**',
+  '!node_modules',
+  '!node_modules/**',
+  '!bower_components',
+  '!bower_components/**',
+  '!dist',
+  '!dist/**',
+  '!sass',
+  '!sass/**',
+  '!.git',
+  '!.git/**',
+  '!package.json',
+  '!.gitignore',
+  '!gulpfile.js',
+  '!.editorconfig',
+  '!.jshintrc'
+];
 
 // browser-sync task for starting the server.
 gulp.task('browser-sync', function() {
@@ -34,6 +57,7 @@ gulp.task('sass', function () {
         .pipe(sass({
              outputStyle: 'expanded'
          }))
+        .pipe(autoprefixer(['> 1%', 'last 2 versions', 'Firefox ESR']))
         .pipe(gulp.dest('./'))
         .pipe(reload({stream:true}));
 });
@@ -56,6 +80,29 @@ gulp.task( 'jshint', function() {
     .pipe( jshint.reporter( 'fail' ) );
 });
 
+gulp.task('build-clean', function() {
+  del(['dist/**/*']);
+});
+
+gulp.task('build-copy', function() {
+  return gulp.src(build_files)
+    .pipe(gulp.dest('dist/chocolita'));
+});
+
+gulp.task('build-zip', function() {
+  return gulp.src('dist/**/*')
+    .pipe(zip('chocolita.zip'))
+    .pipe(gulp.dest('dist'));
+});
+
+gulp.task('build-delete', function() {
+  del(['dist/**/*', '!dist/chocolita.zip']);
+});
+
+//Sequence to build .zip file theme ready for production
+gulp.task('build', function(callback) {
+  runSequence('build-clean', 'build-copy', 'build-zip', 'build-delete');
+});
 
 // The default task. When developting just run 'gulp' and this is what will be ran.
 // Note the second parameter, those are dependency tasks which need to be done
