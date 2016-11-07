@@ -41,6 +41,38 @@ $ bower install jquery
 
 ### Instalando el tema
 
+Hay dos formas de instalar Chocolita; manualmente o utilizando el [instalador para Chocolita](https://www.npmjs.com/package/chocolita-npm-installer) desarrollado por [kikeonline](https://github.com/kikeonline).
+
+#### Instalador de Chocolita
+
+![alt tag](https://raw.githubusercontent.com/kikeonline/chocolita-npm-installer/master/screen.gif)
+
+Instala chocolita-npm-installer
+
+```
+$ npm install -g chocolita-npm-installer
+```
+
+[Instala WordPress](https://codex.wordpress.org/es:Instalando_Wordpress) como lo haces normalmente y asegúrate de que estás en tu carpeta themes de Wordpress /wordpress/wp-content/themes/
+
+```
+$ cd /wordpress/wp-content/themes/
+```
+
+Corre el instalador con la siguiente línea y sigue las instrucciones
+
+```
+$ chocolita
+```
+
+También podes pasar argumentos de la siguiente manera
+
+```
+$ chocolita <themename> [localhost]
+```
+
+#### Instalación manual
+
 [Instala WordPress](https://codex.wordpress.org/es:Instalando_Wordpress) como lo haces normalmente. Cuando hayas finalizado, necesitas clonar este repositorio utilizando los siguientes comandos:
 
 ```
@@ -98,11 +130,13 @@ Si tienes alguna duda acerca del uso de este tema, puedes [mandarnos un mensaje]
 
 ### Contribuyentes
 
-- [Leandro Gómez](https://twitter.com/leogg)
+- [Leandro Gómez](https://github.com/leogg)
 
 ### Agradecimientos
 
-- [Oscar Arroliga](https://twitter.com/oscararroliga ) y [Earl Downs](https://twitter.com/DownsEarl) por el reporte sobre error de permisos.
+- [Lila Gutierrez](https://github.com/lilixx) por el beta testing y reporte de errores en Chocolita.
+- [Oscar Arroliga](https://twitter.com/oscararroliga) y [Earl Downs](https://twitter.com/DownsEarl) por el reporte sobre el error de permisos durante la instalación.
+- [kikeonline](https://github.com/kikeonline) por su trabajo en el instalador de Chocolita.
 
 ### Licencia
 
