@@ -118,14 +118,14 @@ El comando anterior ejecuta las tareas predefinidas en el archivo `gulpfile.js`.
 $ gulp sass
 ```
 
-### Listo para producción.
-Cuando el desarrollo de tu tema este terminado, podés generar un archivo ZIP con el comando:
+### Listo para distribución.
+Cuando el desarrollo de tu tema este terminado, puedes generar un archivo ZIP con el comando:
 
 ```
 $ gulp build
 ```
 
-este lo vas encontrar en dist/ . Este zip contiene los archivos necesarios para instalar tu tema en cualquier instalación de wordpress.
+Este zip lo encontrarás en /dist/ y contiene los archivos necesarios para instalar tu tema en cualquier Wordpress.
 
 ### Soporte y preguntas
 
