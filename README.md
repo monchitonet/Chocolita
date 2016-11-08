@@ -140,6 +140,7 @@ Si tienes alguna duda acerca del uso de este tema, puedes [mandarnos un mensaje]
 ### Contribuyentes
 
 - [Leandro Gómez](https://github.com/leogg)
+- [kikeonline](https://github.com/kikeonline)
 
 ### Agradecimientos
 
