@@ -53,7 +53,7 @@ Instala chocolita-npm-installer
 $ npm install -g chocolita-npm-installer
 ```
 
-[Instala WordPress](https://codex.wordpress.org/es:Instalando_Wordpress) como lo haces normalmente y asegúrate de que estás en tu carpeta themes de Wordpress /wordpress/wp-content/themes/
+[Instala WordPress](https://codex.wordpress.org/es:Instalando_Wordpress) como lo haces normalmente y asegúrate de que estás en tu carpeta themes de WordPress /wordpress/wp-content/themes/
 
 ```
 $ cd /wordpress/wp-content/themes/
@@ -95,7 +95,7 @@ and the repository exists.
 $ git clone https://github.com/monchitonet/Chocolita.git
 ```
 
-Por último, cambia la línea 24 del archivo `gulpfile.js` con los datos de tu servidor. Ingresa a WordPress y activa el tema.
+Por último, cambia la línea 47 del archivo `gulpfile.js` con los datos de tu servidor. Ingresa a WordPress y activa el tema.
 
 ### Corriendo Gulp
 
@@ -125,7 +125,7 @@ Cuando el desarrollo de tu tema este terminado, puedes generar un archivo ZIP co
 $ gulp build
 ```
 
-Este zip lo encontrarás en /dist/ y contiene los archivos necesarios para instalar tu tema en cualquier Wordpress.
+Este zip lo encontrarás en /dist/ y contiene los archivos necesarios para instalar tu tema en cualquier WordPress.
 
 ### Soporte y preguntas
 
