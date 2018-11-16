@@ -4,8 +4,8 @@ Contributors: leogg
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
 
 Requires at least: 4.5
-Tested up to: 4.8
-Stable tag: 1.1.0
+Tested up to: 4.9.8
+Stable tag: 1.1.1
 License: GNU General Public License v2 or later
 License URI: LICENSE
 
@@ -28,6 +28,11 @@ Chocolita es un tema base para WordPress basado en Underscores con Sass y una co
 Chocolita includes support for Infinite Scroll in Jetpack.
 
 == Changelog ==
+
+= 1.1.1 - Nov 16 2018 =
+* Versión de mantenimiento
+* Actualización de plantillas
+* ACF 5.7.7
 
 = 1.1 - Apr 3 2018 =
 * Actualización de plantillas
